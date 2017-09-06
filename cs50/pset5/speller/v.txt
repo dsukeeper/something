@@ -1,0 +1,21 @@
+==201232== Memcheck, a memory error detector
+==201232== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==201232== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==201232== Command: ./speller dictionaries/large texts/alice.txt
+==201232== 
+==201232== 
+==201232== HEAP SUMMARY:
+==201232==     in use at exit: 114,278,752 bytes in 510,173 blocks
+==201232==   total heap usage: 510,175 allocs, 2 frees, 114,279,888 bytes allocated
+==201232== 
+==201232== LEAK SUMMARY:
+==201232==    definitely lost: 0 bytes in 0 blocks
+==201232==    indirectly lost: 0 bytes in 0 blocks
+==201232==      possibly lost: 0 bytes in 0 blocks
+==201232==    still reachable: 114,278,752 bytes in 510,173 blocks
+==201232==         suppressed: 0 bytes in 0 blocks
+==201232== Reachable blocks (those to which a pointer was found) are not shown.
+==201232== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==201232== 
+==201232== For counts of detected and suppressed errors, rerun with: -v
+==201232== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
